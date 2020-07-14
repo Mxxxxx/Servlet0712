@@ -28,7 +28,7 @@ public class PublishHtmlServlet extends HttpServlet {
                 "    <title>老陈说 | 发表文章</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
-                "    <form method=\"post\" action=\"publish\">\n" +
+                "    <form method=\"post\" action=\"publish\" enctype=\"multipart/form-data\">\n" +
                 "        <div>\n" +
                 "            <label for=\"title\">标题</label>\n" +
                 "            <input type=\"text\" id=\"title\" name=\"title\">\n" +
@@ -37,6 +37,10 @@ public class PublishHtmlServlet extends HttpServlet {
                 "        <div>\n" +
                 "            <label for=\"content\">正文</label>\n" +
                 "            <textarea id=\"content\" name=\"content\"></textarea>\n" +
+                "        </div>\n" +
+                "        <div>\n" +
+                "            <label for=\"image\">图片</label>\n" +
+                "            <input type=\"file\" id=\"image\" name=\"image\">" +
                 "        </div>\n" +
                 "        \n" +
                 "        <div>\n" +
